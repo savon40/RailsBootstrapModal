@@ -56,6 +56,15 @@ class CustomersController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def new_release
+    
+    @controller_variable = 'hello steve!!!'
+    respond_to do |format|
+      format.html
+      format.js
+    end
+  end
 
 private
   

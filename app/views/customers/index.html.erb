@@ -6,6 +6,9 @@
   </div>
   <div class="new-customer"></div>
 
+  <%= link_to 'Add release', new_release_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'}  %>
+
+
   <table id class="table table-bordered table-striped">
     <thead>
     <tr>
@@ -21,6 +24,8 @@
     </tbody>
   </table>
 
-  <%= render 'dialog' %>
+  render 'dialog'
+  
+  <div id="modal-window" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
 
 </div>
